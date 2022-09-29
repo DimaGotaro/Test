@@ -96,8 +96,7 @@ public class Main {
         }
 
         HashMap<Integer, Integer> indexMap = new HashMap<>();
-        while (indexMap.size() < firstArray.size() &&
-                indexMap.size() < secondArray.size()) {
+        while (indexMap.size() < firstArray.size() && indexMap.size() < secondArray.size()) {
             Map.Entry<String, Integer> maxEntry = treeMapCount.lastEntry();
             int indexSecondMax = Integer.parseInt(maxEntry.getKey().split(" ")[1]);
             Integer indexFirstMax = maxEntry.getValue();
